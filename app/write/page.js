@@ -129,7 +129,7 @@ const {isAdmin} = useContext(Context)
     });
 
     try {
-      await axios.post('https://bored-flannel-nightgown-tick.cyclic.app/write', formData, {
+      await axios.post('https://puzzled-sandals-mite.cyclic.app/write', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
