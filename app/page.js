@@ -63,7 +63,7 @@ function Page() {
     // Fetch new data if not in local storage or if data is outdated
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://bored-flannel-nightgown-tick.cyclic.app/get');
+        const response = await axios.get('https://puzzled-sandals-mite.cyclic.app/get');
         console.log('Received Data featured:', response.data);
         const shuffledData = shuffleArray(response.data.slice());
         setData(shuffledData);
@@ -95,7 +95,7 @@ const [FullData, setFullData] = useState(null);
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get('https://bored-flannel-nightgown-tick.cyclic.app/get');
+        const res = await axios.get('https://puzzled-sandals-mite.cyclic.app/get');
         console.log('categories:', res.data);
         setFullData(res.data); // Set the data received from the API
         setLoading1(false);
@@ -241,7 +241,7 @@ const moreDevelopment = () => {
       try {
         setLoading(true);
 
-        const response = await axios.get(`https://bored-flannel-nightgown-tick.cyclic.app/search?query=${word}`);
+        const response = await axios.get(`https://puzzled-sandals-mite.cyclic.app/search?query=${word}`);
         setSearchResults(response.data.posts);
 
         setLoading(false);
