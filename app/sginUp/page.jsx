@@ -49,7 +49,7 @@ const {dispatch} = useContext(Context)
           password: password,
           destination: destination,
         };
-        await axios.post('https://bored-flannel-nightgown-tick.cyclic.app/users', userData);
+        await axios.post('https://puzzled-sandals-mite.cyclic.app/users', userData);
         setSubmitted(true)
     dispatch({ type: "LOGIN_SUCCESS"  ,  payload: name });
     window.location.href = '/logIn';
