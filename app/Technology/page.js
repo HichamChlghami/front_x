@@ -33,7 +33,7 @@ function page() {
       try {
         setLoading(true);
 
-        const response = await axios.get(`https://bored-flannel-nightgown-tick.cyclic.app/search?query=${word}`);
+        const response = await axios.get(`https://puzzled-sandals-mite.cyclic.app/search?query=${word}`);
         setSearchResults(response.data.posts);
         console.log('Search results:', response.data.posts);
         if(check){
@@ -53,7 +53,7 @@ function page() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/get');
+        const res = await axios.get('https://puzzled-sandals-mite.cyclic.app/get');
         console.log('categories:', res.data);
         setData(res.data); // Set the data received from the API
       } catch (error) {
