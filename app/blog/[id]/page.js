@@ -45,7 +45,7 @@ console.log(isAdmin , 'isadmin')
 
     const fetchData = async () => {
       try {
-        const res = await axios.get(`https://bored-flannel-nightgown-tick.cyclic.app/get/${id}`);
+        const res = await axios.get(`https://puzzled-sandals-mite.cyclic.app/get/${id}`);
         setData(res.data);
         setContent(res.data.content)
         setLoadingData(false)
@@ -58,7 +58,7 @@ console.log(isAdmin , 'isadmin')
     
     const fetchDataRelated = async () => {
       try {
-        const res = await axios.get(`https://bored-flannel-nightgown-tick.cyclic.app/get/${id}/related`);
+        const res = await axios.get(`https://puzzled-sandals-mite.cyclic.app/get/${id}/related`);
         setDataRelated(res.data);
         console.log(res.data , 'related')
       } catch (error) {
@@ -106,7 +106,7 @@ useEffect(() => {
   const checkSearch = async () => {
     try {
       setLoading(true)
-      const response = await axios.get(`https://bored-flannel-nightgown-tick.cyclic.app/search?query=${word}`);
+      const response = await axios.get(`https://puzzled-sandals-mite.cyclic.app/search?query=${word}`);
       setSearchResults(response.data.posts);
       setLoading(false)
       console.log('Search results:', response.data.posts);
@@ -237,7 +237,7 @@ useEffect(() => {
   
 
     try {
-      await axios.put(`https://bored-flannel-nightgown-tick.cyclic.app/update/${id}`, formData, {
+      await axios.put(`https://puzzled-sandals-mite.cyclic.app/update/${id}`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -250,7 +250,7 @@ useEffect(() => {
 // this logic for delete the post
 const handleDelete = async ()=>{
   try {
-    await axios.delete(`https://bored-flannel-nightgown-tick.cyclic.app/delete/${id}`)
+    await axios.delete(`https://puzzled-sandals-mite.cyclic.app/delete/${id}`)
   setShowModal(false);
 
     window.location.href = '/';
