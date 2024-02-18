@@ -27,7 +27,7 @@ function Login() {
     setPasswordError("");
 
     try {
-      const response = await axios.post("https://bored-flannel-nightgown-tick.cyclic.app/login", {
+      const response = await axios.post("https://puzzled-sandals-mite.cyclic.app/login", {
         email,
         password,
       })
