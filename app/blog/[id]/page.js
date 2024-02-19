@@ -680,7 +680,7 @@ item.type === 'image' && (
 
     
 {item.type === "text"&&( <p className='single-text' dangerouslySetInnerHTML={{
-      __html: item.value && item.value.split(' ').slice(0, 30).join(' ') + '...' 
+      __html: item.value 
     }} />)}
  {item.type === "image"&&(
  <div className='single_container_image'><img src={`/${item.value}`} alt='' className='single_image'/></div>
